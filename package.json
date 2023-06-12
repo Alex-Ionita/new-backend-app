@@ -1,0 +1,20 @@
+{
+  "name": "new-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "preview": "vite preview",
+    "client": "vite",
+    "server": "nodemon server.js",
+    "dev": "concurrently \"npm run client\" \"cd server && npm run server\""
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "vite": "^4.3.9"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
